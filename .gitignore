@@ -1,0 +1,5 @@
+/test_data/images/*
+/test_data/texts/*
+
+/compressors/*/compressed.*
+/compressors/*/decompressed.txt
