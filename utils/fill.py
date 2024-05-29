@@ -34,8 +34,8 @@ def generate_repeating_sequences(file_path, target_size_mb):
 
 # Fill test .txt files
 if __name__ == "__main__":
-    file_path_1 = "test_data/txt/random.txt"
-    file_path_2 = "test_data/txt/sequences.txt"
+    file_path_1 = "test_data/texts/random.txt"
+    file_path_2 = "test_data/texts/sequences.txt"
     target_size_mb = 1
 
     generate_text_file(file_path_1, target_size_mb)

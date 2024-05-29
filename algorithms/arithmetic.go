@@ -5,7 +5,7 @@ import (
 )
 
 // 10 MB of information
-const CHUNK_SIZE = 10_000_000
+const AC_CHUNK_SIZE = 10_000_000
 
 // 80 symbols is upper bound for encode
 const STRING_SIZE = 100

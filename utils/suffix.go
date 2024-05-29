@@ -23,10 +23,21 @@ func NaiveSuffixArray(s string) []int {
 	}
 
 	sort.Slice(suffixes, func(i, j int) bool {
-		return string(runes[suffixes[i]:]) < string(runes[suffixes[j]:])
+		return compareSuffixes(runes, suffixes[i], suffixes[j])
 	})
 
 	return suffixes
+}
+
+func compareSuffixes(runes []rune, i, j int) bool {
+	for i < len(runes) && j < len(runes) {
+		if runes[i] != runes[j] {
+			return runes[i] < runes[j]
+		}
+		i++
+		j++
+	}
+	return i > j
 }
 
 // Return last column of BW-matrix using suffix array
